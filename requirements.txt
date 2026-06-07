@@ -1,3 +1,4 @@
-
 pyTelegramBotAPI
 pytz
+schedule
+requests
