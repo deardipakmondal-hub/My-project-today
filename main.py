@@ -13,7 +13,7 @@ API_TOKEN = '8675792162:AAECQMno0-Rdk4QM7z0tAqe410fcYtj0Sqw'
 ADMIN_GROUP_ID = -1003758213595
 KOLKATA = pytz.timezone('Asia/Kolkata')
 # 🔥 Aapka Singapore region wala Firebase URL yahan bilkul sahi format mein set hai:
-FIREBASE_DB_URL = 'https://fullmap-903ce-default-rtdb.asia-southeast1.firebasedatabase.app/'
+FIREBASE_DB_URL = 'Https://fullmap-903ce-default-rtdb.asia-southeast1.firebasedatabase.app/'
 
 # --- FIREBASE INITIALIZE ---
 cred = credentials.Certificate("credentials.json")
