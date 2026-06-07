@@ -16,7 +16,15 @@ KOLKATA = pytz.timezone('Asia/Kolkata')
 FIREBASE_DB_URL = 'Https://fullmap-903ce-default-rtdb.asia-southeast1.firebasedatabase.app/'
 
 # --- FIREBASE INITIALIZE ---
-cred = credentials.Certificate("credentials.json")
+import os
+import json
+# ... baaki imports wahi rahenge ...
+
+# --- FIREBASE INITIALIZE ---
+# Railway ke environment variable 'FIREBASE_CREDENTIALS' se key load karein
+cred_data = json.loads(os.environ['FIREBASE_CREDENTIALS'])
+cred = credentials.Certificate(cred_data)
+
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred, {
         'databaseURL': FIREBASE_DB_URL
